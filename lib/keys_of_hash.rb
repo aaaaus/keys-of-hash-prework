@@ -1,3 +1,5 @@
+require "pry"
+
 class Hash
   def keys_of(*arguments)
     array =[]
@@ -13,6 +15,8 @@ class Hash
        c: 3, 
        d: 1
     }
+    
+    binding.pry
     
     hash.each do |k, v|
       arguments.each do |x|
